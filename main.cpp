@@ -11,7 +11,7 @@ void ukuran(int, int);
 
 int is_depth;
 
-
+//coba edit
 int main(int argc, char** argv)
 {
     glutInit(&argc, argv);
