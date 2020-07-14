@@ -15,6 +15,7 @@ int is_depth;
 
 //mantap-mantap
 // sak sake
+//penting maju
 int main(int argc, char** argv)
 {
     glutInit(&argc, argv);
