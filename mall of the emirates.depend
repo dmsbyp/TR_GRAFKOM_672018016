@@ -212,8 +212,10 @@
 
 1301111164 c:\program files (x86)\codeblocks\mingw\include\gl\gl.h
 
-1426324528 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
-	"freeglut_std.h"
+976692172 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
 
 1301111164 c:\program files (x86)\codeblocks\mingw\include\gl\glu.h
 	<stddef.h>
@@ -222,7 +224,7 @@
 1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
 	<_mingw.h>
 
-1594718226 source:c:\users\tete\tr_grafkom_672018016\main.cpp
+1594741226 source:c:\users\tete\tr_grafkom_672018016\main.cpp
 	<stdlib.h>
 	<windows.h>
 	<GL/gl.h>
