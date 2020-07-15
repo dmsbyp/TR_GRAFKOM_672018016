@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1594777614 source:e:\k u l i a h\semester6\grafika komputer\tugas\mall of the emirates\main.cpp
+1594792281 source:e:\k u l i a h\semester6\grafika komputer\tugas\mall of the emirates\main.cpp
 	<stdlib.h>
 	<windows.h>
 	<GL/gl.h>
@@ -222,7 +222,7 @@
 1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
 	<_mingw.h>
 
-1594741226 source:c:\users\tete\tr_grafkom_672018016\main.cpp
+1594792035 source:c:\users\tete\tr_grafkom_672018016\main.cpp
 	<stdlib.h>
 	<windows.h>
 	<GL/gl.h>
@@ -246,4 +246,11 @@
 	<GL/gl.h>
 	<GL/glu.h>
 	<stdlib.h>
+
+1594793298 source:d:\aku suka kuliah\semester 6\grafika\tr_grafkom_672018016\main.cpp
+	<stdlib.h>
+	<windows.h>
+	<GL/gl.h>
+	<GL/glut.h>
+	<math.h>
 
