@@ -1,8 +1,11 @@
+#ifdef __APPLE__
+#include <GLUT/glut.h>
+#else
+#endif
 #include <stdlib.h>
-#include <windows.h>
+#include<windows.h>
 #include <GL/gl.h>
 #include <GL/glut.h>
-#include <math.h>
 
 void init(void);
 void tampil(void);
@@ -327,132 +330,308 @@ void gedung_depan ()
     glEnd();
 
     //donny
-    //1
-    glBegin(GL_QUADS);
-    glColor3f(0,1,0);
-    glVertex3f(-320, 0, -50);
-    glVertex3f(-300,  0, -50);
-    glVertex3f(-300, 40, -50);
-    glVertex3f(-320, 40, -50);
-    glEnd();
-
-     //2
-    glBegin(GL_QUADS);
-    glColor3f(1,1,1);
-    glVertex3f(-320, 0, -50);
-    glVertex3f(-320, 40, -50);
-    glVertex3f(-320, 40, -100);
-    glVertex3f(-320, 0, -100);
-    glEnd();
-
-      //3
+   //1
     glBegin(GL_QUADS);
     glColor3f(1,1,0);
-    glVertex3f(-320, 0, -100);
-    glVertex3f(-320, 40, -100);
-     glVertex3f(-370, 40, -100);
-      glVertex3f(-370, 0, -100);
+    glVertex3f(-300, 0, -50);
+    glVertex3f(-375,  0, -50);
+    glVertex3f(-375, 100, -50);
+    glVertex3f(-300, 100, -50);
     glEnd();
 
-
-      //4
+    //2
     glBegin(GL_QUADS);
-    glColor3f(1,0,0);
-    glVertex3f(-370, 40, -100);
-    glVertex3f(-370, 0, -100);
-    glVertex3f(-370, 0, -200);
-    glVertex3f(-370, 40, -200);
+    glColor3f(0,1,0);
+    glVertex3f(-375,  0, -50);
+    glVertex3f(-375, 100, -50);
+    glVertex3f(-375, 100, -75);
+    glVertex3f(-375,  0, -75);
     glEnd();
 
+    //3
+    glBegin(GL_QUADS);
+    glColor3f(1,1,0);
+    glVertex3f(-375, 100, -75);
+    glVertex3f(-375,  0, -75);
+    glVertex3f(-400,  0, -100);
+    glVertex3f(-400,  100, -100);
+    glEnd();
+
+
+    //4
+    glBegin(GL_QUADS);
+    glColor3f(1,0,1);
+    glVertex3f(-400,  0, -100);
+    glVertex3f(-400,  100, -100);
+    glVertex3f(-500,  100, -100);
+    glVertex3f(-500,  0, -100);
+    glEnd();
 
      //5
     glBegin(GL_QUADS);
-    glColor3f(1,1,1);
-    glVertex3f(-370, 0, -200);
-    glVertex3f(-370, 40, -200);
-    glVertex3f(-450, 40, -200);
-    glVertex3f(-450, 0, -200);
+    glColor3f(0,0,1);
+    glVertex3f(-500,  100, -100);
+    glVertex3f(-500,  0, -100);
+    glVertex3f(-500,  0, -175);
+    glVertex3f(-500,  100, -175);
     glEnd();
 
-      //6
+     //6
     glBegin(GL_QUADS);
-    glColor3f(0,1,0);
-    glVertex3f(-450, 40, -200);
-    glVertex3f(-450, 0, -200);
-    glVertex3f(-470, 0, -150);
-    glVertex3f(-470, 40, -150);
+    glColor3f(1,0,1);
+    glVertex3f(-500,  0, -175);
+    glVertex3f(-500,  50, -175);
+    glVertex3f(-575,  50, -175);
+    glVertex3f(-575,  0, -175);
     glEnd();
 
-    //7
+      //7
     glBegin(GL_QUADS);
-    glColor3f(0,1,0);
-    glVertex3f(-470, 0, -150);
-    glVertex3f(-470, 40, -150);
-    glVertex3f(-550, 40, -180);
-    glVertex3f(-550, 0, -180);
+    glColor3f(1,1,0);
+    glVertex3f(-575,  50, -175);
+    glVertex3f(-575,  0, -175);
+    glVertex3f(-575,  0, -150);
+    glVertex3f(-575,  50, -150);
     glEnd();
-
 
      //8
     glBegin(GL_QUADS);
     glColor3f(0,1,1);
-    glVertex3f(-550, 40, -180);
-    glVertex3f(-550, 0, -180);
-    glVertex3f(-470, 0, -400);
-    glVertex3f(-470, 40, -400);
+    glVertex3f(-575,  0, -150);
+    glVertex3f(-575,  50, -150);
+    glVertex3f(-625,  50, -175);
+     glVertex3f(-625,  0, -175);
     glEnd();
 
     //9
     glBegin(GL_QUADS);
     glColor3f(1,0,1);
-    glVertex3f(-470, 0, -400);
-    glVertex3f(-470, 40, -400);
-    glVertex3f(-400, 40, -400);
-    glVertex3f(-400, 0, -400);
+    glVertex3f(-625,  50, -175);
+     glVertex3f(-625,  0, -175);
+     glVertex3f(-625,  0, -200);
+     glVertex3f(-625,  50, -200);
     glEnd();
 
      //10
     glBegin(GL_QUADS);
-    glColor3f(0,1,0.5);
-    glVertex3f(-400, 40, -400);
-    glVertex3f(-400, 0, -400);
-    glVertex3f(-400, 0, -600);
-     glVertex3f(-400, 40, -600);
+    glColor3f(0.5,0,1);
+     glVertex3f(-625,  0, -200);
+     glVertex3f(-625,  50, -200);
+     glVertex3f(-650,  50, -200);
+     glVertex3f(-650,  0, -200);
     glEnd();
 
-     //11
+    //11
     glBegin(GL_QUADS);
-    glColor3f(1.5,0,0.5);
-    glVertex3f(-400, 40, -600);
-    glVertex3f(-400, 0, -600);
-    glVertex3f(-300, 0, -600);
-    glVertex3f(-300, 40, -600);
+    glColor3f(0.5,0.5,1);
+     glVertex3f(-650,  50, -200);
+     glVertex3f(-650,  0, -200);
+     glVertex3f(-575,  0, -325);
+     glVertex3f(-575,  50, -325);
     glEnd();
+
     //12
     glBegin(GL_QUADS);
-    glColor3f(1.5,0,0.5);
-    glVertex3f(-300, 0, -600);
-    glVertex3f(-300, 40, -600);
-    glVertex3f(-300, 40, -800);
-    glVertex3f(-300, 0, -800);
+    glColor3f(0.5,0.5,0);
+     glVertex3f(-575,  0, -325);
+     glVertex3f(-575,  50, -325);
+     glVertex3f(-525,  50, -325);
+     glVertex3f(-525,  0, -325);
     glEnd();
 
-     //13
+    //13
     glBegin(GL_QUADS);
-    glColor3f(1.5,0,0.5);
-    glVertex3f(-300, 40, -800);
-    glVertex3f(-300, 0, -800);
-    glVertex3f(-250, 0, -1000);
-     glVertex3f(-250, 40, -1000);
+    glColor3f(0,0.5,0.5);
+     glVertex3f(-525,  50, -325);
+     glVertex3f(-525,  0, -325);
+     glVertex3f(-525,  0, -375);
+     glVertex3f(-525,  50, -375);
     glEnd();
 
-     //14
+    //14
     glBegin(GL_QUADS);
-    glColor3f(1.5,0,0.5);
-    glVertex3f(-250, 0, -1000);
-     glVertex3f(-250, 40, -1000);
-     glVertex3f(250, 40, -1000);
+    glColor3f(0,0,0.5);
+     glVertex3f(-525,  0, -375);
+     glVertex3f(-525,  50, -375);
+     glVertex3f(-550,  50, -375);
+     glVertex3f(-550,  0, -375);
+    glEnd();
+
+    //15
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0.5);
+     glVertex3f(-550,  50, -375);
+     glVertex3f(-550,  0, -375);
+     glVertex3f(-550,  0, -400);
+     glVertex3f(-550,  50, -400);
+    glEnd();
+
+     //16
+    glBegin(GL_QUADS);
+    glColor3f(0.5,0,0.5);
+     glVertex3f(-550,  0, -400);
+     glVertex3f(-550,  50, -400);
+      glVertex3f(-500,  50, -400);
+       glVertex3f(-500,  0, -400);
+    glEnd();
+
+
+     //17
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0.5);
+    glVertex3f(-500,  50, -400);
+    glVertex3f(-500,  0, -400);
+    glVertex3f(-500,  0, -375);
+    glVertex3f(-500,  50, -375);
+    glEnd();
+
+       //18
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0.5);
+    glVertex3f(-500,  0, -375);
+    glVertex3f(-500,  50, -375);
+    glVertex3f(-375,  50, -375);
+    glVertex3f(-375,  0, -375);
+    glEnd();
+
+     //19
+    glBegin(GL_QUADS);
+    glColor3f(0.5,0,0.5);
+    glVertex3f(-375,  50, -375);
+    glVertex3f(-375,  0, -375);
+    glVertex3f(-375,  0, -400);
+    glVertex3f(-375,  50, -400);
+    glEnd();
+
+     //20
+    glBegin(GL_QUADS);
+    glColor3f(0.5,0.5,0);
+    glVertex3f(-375,  0, -400);
+    glVertex3f(-375,  50, -400);
+    glVertex3f(-400,  50, -425);
+    glVertex3f(-400,  0, -425);
+    glEnd();
+
+     //21
+    glBegin(GL_QUADS);
+    glColor3f(1,0.5,0);
+    glVertex3f(-400,  50, -425);
+    glVertex3f(-400,  0, -425);
+    glVertex3f(-400,  0, -525);
+    glVertex3f(-400,  50, -525);
+    glEnd();
+
+    //22
+    glBegin(GL_QUADS);
+    glColor3f(1,1,0);
+    glVertex3f(-400,  0, -525);
+    glVertex3f(-400,  50, -525);
+    glVertex3f(-325,  50, -1000);
+    glVertex3f(-325,  0, -1000);
+
+    glEnd();
+
+
+//23
+    glBegin(GL_QUADS);
+    glColor3f(0.5,0,0.5);
+     glVertex3f(-325,  50, -1000);
+    glVertex3f(-325,  0, -1000);
      glVertex3f(250, 0, -1000);
+     glVertex3f(250, 50, -1000);
+    glEnd();
+
+//gedung kiri
+//a
+    glBegin(GL_QUADS);
+    glColor3f(1,0,0);
+    glVertex3f(-300, 100, -50);
+    glVertex3f(-350,  100, -50);
+    glVertex3f(-350, 250, -50);
+    glVertex3f(-300, 250, -50);
+    glEnd();
+
+
+//b
+    glBegin(GL_QUADS);
+    glColor3f(1,0,0);
+    glVertex3f(-350,  100, -50);
+    glVertex3f(-350, 250, -50);
+    glVertex3f(-350, 250, -125);
+    glVertex3f(-350, 100, -125);
+    glEnd();
+
+
+//c
+    glBegin(GL_QUADS);
+    glColor3f(1,0,0);
+    glVertex3f(-350, 250, -125);
+    glVertex3f(-350, 100, -125);
+    glVertex3f(-500, 100, -125);
+    glVertex3f(-500, 250, -125);
+    glEnd();
+
+//d
+    glBegin(GL_QUADS);
+    glColor3f(1,0,1);
+    glVertex3f(-300, 0, -50);
+    glVertex3f(-300,  250, -50);
+    glVertex3f(-300, 250, -175);
+    glVertex3f(-300, 0, -175);
+    glEnd();
+
+//e
+    glBegin(GL_QUADS);
+    glColor3f(1,0,1);
+    glVertex3f(-300, 250, -175);
+    glVertex3f(-300, 0, -175);
+     glVertex3f(-500, 0, -175);
+      glVertex3f(-500, 250, -175);
+    glEnd();
+
+//f
+    glBegin(GL_QUADS);
+    glColor3f(0,0,1);
+    glVertex3f(-500,  250, -125);
+    glVertex3f(-500,  100, -125);
+    glVertex3f(-500,  100, -175);
+    glVertex3f(-500,  250, -175);
+    glEnd();
+
+    //atap gedung 1
+    glBegin(GL_POLYGON);
+    glColor3f(1,0.5,1);
+    glVertex3f(-350, 100, -50);
+    glVertex3f(-375, 100, -50);
+    glVertex3f(-375, 100, -75);
+    glVertex3f(-400, 100, -100);
+    glVertex3f(-400, 100, -125);
+    glVertex3f(-350, 100, -125);
+    glVertex3f(-350, 100, -50);
+    glEnd();
+    glBegin(GL_POLYGON);
+    glColor3f(1,0.5,1);
+    glVertex3f(-400, 100, -100);
+    glVertex3f(-400, 100, -125);
+    glVertex3f(-500, 100, -125);
+    glVertex3f(-500, 100, -100);
+    glEnd();
+
+    //atap gedung 2
+    glBegin(GL_POLYGON);
+    glColor3f(1,0.5,1);
+    glVertex3f(-300, 250, -50);
+    glVertex3f(-350, 250, -50);
+    glVertex3f(-350, 250, -125);
+    glVertex3f(-300, 250, -125);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(1,0.5,1);
+    glVertex3f(-300, 250, -125);
+    glVertex3f(-500, 250, -125);
+    glVertex3f(-500, 250, -175);
+    glVertex3f(-300, 250, -175);
     glEnd();
 
 }
