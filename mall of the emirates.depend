@@ -249,3 +249,10 @@
 	<GL/glu.h>
 	<stdlib.h>
 
+1594793298 source:d:\aku suka kuliah\semester 6\grafika\tr_grafkom_672018016\main.cpp
+	<stdlib.h>
+	<windows.h>
+	<GL/gl.h>
+	<GL/glut.h>
+	<math.h>
+
