@@ -39,7 +39,6 @@ void init(void)
     glPointSize(9.0);
     glLineWidth(6.0f);
 }
-//keganti iki lo
 void gedung_samping_hotel ()
 {
    //1
