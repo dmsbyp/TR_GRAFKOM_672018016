@@ -1,47 +1,50 @@
-#ifdef __APPLE__
-#include <GLUT/glut.h>
-#else
-#endif
-#include <stdlib.h>
-#include<windows.h>
-#include <GL/gl.h>
+#include <windows.h>
 #include <GL/glut.h>
 
 void init(void);
 void tampil(void);
+void mouse(int button, int state, int x, int y);
 void keyboard(unsigned char, int, int);
 void ukuran(int, int);
+void mouseMotion(int x,int y);
 
+float xrot = 0.0f;
+float yrot = 0.0f;
+float xdiff = 0.0f;
+float ydiff = 0.0f;
+bool mouseDown = false;
 int is_depth;
 
-
-
-
-int main(int argc, char** argv)
+int main (int argc, char **argv)
 {
     glutInit(&argc, argv);
-    glutInitDisplayMode( GLUT_DOUBLE | GLUT_RGB);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
     glutInitWindowSize(800, 600);
     glutInitWindowPosition(250, 80);
-    glutCreateWindow("TR GRAFKOM");
+    glutCreateWindow("mall of the emirates");
     init();
-    glutDisplayFunc(tampil);
-    glutKeyboardFunc(keyboard);
-    glutReshapeFunc(ukuran);
+	glutDisplayFunc(tampil);
+	glutKeyboardFunc(keyboard);
+	glutMouseFunc(mouse);
+    glutMotionFunc(mouseMotion);
+	glutReshapeFunc(ukuran);
     glutMainLoop();
     return 0;
 }
 
 void init(void)
 {
-    glClearColor(0.5, 0.5, 1.0, 1.0);
+    glClearColor(0.5, 0.5, 0.5, 0.5);
     glMatrixMode(GL_PROJECTION);
+    glEnable(GL_COLOR_MATERIAL);
     glEnable(GL_DEPTH_TEST);
-    is_depth=1;
+    is_depth = 1;
     glMatrixMode(GL_MODELVIEW);
     glPointSize(9.0);
     glLineWidth(6.0f);
 }
+
+
 void gedung_samping_hotel ()
 {
    //1
@@ -286,6 +289,30 @@ void gedung_depan ()
     glVertex3f(-90.0, 110.0, 10.0);
     glVertex3f(-90.0, 0.0, 10.0);
     glVertex3f(-40.0, 0.0, 10.0);
+    glEnd();
+    //16 kubah
+    glBegin(GL_QUADS);
+    glColor3f(0.5, 0.0, 0.0);
+    glVertex3f(-105.0, 110.0, -15.0);
+    glVertex3f(-90.0, 110.0, 10.0);
+    glVertex3f(-90.0, 0.0, 10.0);
+    glVertex3f(-105.0, 0.0, -15.0);
+    glEnd();
+    //17 kubah
+    glBegin(GL_QUADS);
+    glColor3f(1.0, 0.0, 0.0);
+    glVertex3f(-105.0, 80.0, -15.0);
+    glVertex3f(-110.0, 80.0, -10.0);
+    glVertex3f(-110.0, 0.0, -10.0);
+    glVertex3f(-105.0, 0.0, -15.0);
+    glEnd();
+    //18 kubah
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(-110.0, 80.0, -10.0);
+    glVertex3f(-130.0, 80.0, -10.0);
+    glVertex3f(-130.0, 0.0, -10.0);
+    glVertex3f(-110.0, 0.0, -10.0);
     glEnd();
 
 
@@ -1231,11 +1258,42 @@ gedung_samping_hotel();
 
 }
 
+void idle(){
+	if(!mouseDown){
+		xrot += 0.3f;
+		yrot += 0.4f;
+	}
+	glutPostRedisplay();
+}
+
+void mouse (int button, int state, int x, int y){
+	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN){
+		mouseDown = true;
+		xdiff = x - yrot;
+		ydiff = -y + xrot;
+	} else {
+		mouseDown = false;
+	}
+}
+
+void mouseMotion(int x, int y){
+	if(mouseDown){
+		yrot = x - xdiff;
+		xrot = y + xdiff;
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        glLoadIdentity();
+        gluLookAt(0.0f, 0.0f, 3.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f);
+        glRotatef(xrot, 1.0f, 0.0f, 0.0f);
+        glRotatef(yrot, 0.0f, 1.0f, 0.0f);
+		glutPostRedisplay();
+	}
+}
+
 void keyboard(unsigned char key, int x, int y)
 {
     switch (key)
     {
-    case 'w':
+	case 'w':
     case 'W':
         glTranslatef(0.0, 0.0, 3.0);
         break;
@@ -1243,7 +1301,7 @@ void keyboard(unsigned char key, int x, int y)
     case 'D':
         glTranslatef(3.0, 0.0, 0.0);
         break;
-    case 's':
+	case 's':
     case 'S':
         glTranslatef(0.0, 0.0, -3.0);
         break;
@@ -1251,10 +1309,10 @@ void keyboard(unsigned char key, int x, int y)
     case 'A':
         glTranslatef(-3.0, 0.0, 0.0);
         break;
-    case '7':
+	case '7':
         glTranslatef(0.0, 3.0, 0.0);
         break;
-    case '9':
+	case '9':
         glTranslatef(0.0, -3.0, 0.0);
         break;
     case '2':
@@ -1292,12 +1350,11 @@ void keyboard(unsigned char key, int x, int y)
 
 void ukuran(int lebar, int tinggi)
 {
-    if (tinggi==0) tinggi=1;
+    if (tinggi == 0) tinggi = 1;
+
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluPerspective(500.0, lebar / tinggi, 10.0, 500.0);
-    glTranslatef(0.0, -5.0, -200.0);
+    gluPerspective(500.0, lebar / tinggi, 5.0, 500.0);
+    glTranslatef(0.0, -5.0, -150.0);
     glMatrixMode(GL_MODELVIEW);
 }
-
-//comen
