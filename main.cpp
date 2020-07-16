@@ -310,11 +310,42 @@ void gedung_depan ()
     glBegin(GL_QUADS);
     glColor3f(0.0, 0.0, 0.0);
     glVertex3f(-110.0, 80.0, -10.0);
-    glVertex3f(-130.0, 80.0, -10.0);
-    glVertex3f(-130.0, 0.0, -10.0);
+    glVertex3f(-140.0, 80.0, -10.0);
+    glVertex3f(-140.0, 0.0, -10.0);
     glVertex3f(-110.0, 0.0, -10.0);
     glEnd();
-
+    //19 kubah
+    glBegin(GL_QUADS);
+    glColor3f(1.0, 0.0, 0.0);
+    glVertex3f(-140.0, 80.0, -10.0);
+    glVertex3f(-160.0, 80.0, -30.0);
+    glVertex3f(-160.0, 0.0, -30.0);
+    glVertex3f(-140.0, 0.0, -10.0);
+    glEnd();
+    //20kubah
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(-160.0, 80.0, -60.0);
+    glVertex3f(-160.0, 80.0, -30.0);
+    glVertex3f(-160.0, 0.0, -30.0);
+    glVertex3f(-160.0, 0.0, -60.0);
+    glEnd();
+    //21 tembok panjang
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(-160.0, 80.0, -60.0);
+    glVertex3f(-300.0, 80.0, -60.0);
+    glVertex3f(-300.0, 0.0, -60.0);
+    glVertex3f(-160.0, 0.0, -60.0);
+    glEnd();
+    //22 atap tembok panjang
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(-20.0, 80.0, -200.0);
+    glVertex3f(-300.0, 80.0, -200.0);
+    glVertex3f(-300.0, 80.0, -60.0);
+    glVertex3f(-20.0, 80.0, -60.0);
+    glEnd();
 
     //donny
    //1
