@@ -1,10 +1,7 @@
 # depslib dependency file v1.0
-1594792281 source:e:\k u l i a h\semester6\grafika komputer\tugas\mall of the emirates\main.cpp
-	<stdlib.h>
+1594896782 source:e:\k u l i a h\semester6\grafika komputer\tugas\mall of the emirates\main.cpp
 	<windows.h>
-	<GL/gl.h>
 	<GL/glut.h>
-	<math.h>
 
 1341006776 c:\program files (x86)\codeblocks\mingw\include\stdlib.h
 	<_mingw.h>
@@ -212,7 +209,14 @@
 
 1301111164 c:\program files (x86)\codeblocks\mingw\include\gl\gl.h
 
+1301111164 D
+
 976641772 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+976692172 3426eb81474eaf5b027b233475ab83925f8c63
 	<windows.h>
 	<GL/gl.h>
 	<GL/glu.h>
@@ -249,17 +253,11 @@
 	<GL/glu.h>
 	<stdlib.h>
 
-1594793298 source:d:\aku suka kuliah\semester 6\grafika\tr_grafkom_672018016\main.cpp
-	<stdlib.h>
+1595051906 source:d:\aku suka kuliah\semester 6\grafika\tr_grafkom_672018016\main.cpp
 	<windows.h>
-	<GL/gl.h>
 	<GL/glut.h>
-	<math.h>
 
-1595049171 source:c:\users\donny\documents\kalkulator\tr_grafkom_672018016\main.cpp
-	<GLUT/glut.h>
-	<stdlib.h>
+1595052661 source:c:\users\donny\documents\kalkulator\tr_grafkom_672018016\main.cpp
 	<windows.h>
-	<GL/gl.h>
 	<GL/glut.h>
 
