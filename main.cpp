@@ -632,6 +632,7 @@ void gedung_depan ()
     glVertex3f(-500, 250, -175);
     glVertex3f(-300, 250, -175);
     glEnd();
+    //aku
 
 }
 
