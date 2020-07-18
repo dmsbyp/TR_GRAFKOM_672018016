@@ -1,9 +1,6 @@
 # depslib dependency file v1.0
-1594812277 source:e:\k u l i a h\semester6\grafika komputer\tugas\mall of the emirates\main.cpp
-	<GLUT/glut.h>
-	<stdlib.h>
+1594896782 source:e:\k u l i a h\semester6\grafika komputer\tugas\mall of the emirates\main.cpp
 	<windows.h>
-	<GL/gl.h>
 	<GL/glut.h>
 
 1341006776 c:\program files (x86)\codeblocks\mingw\include\stdlib.h
