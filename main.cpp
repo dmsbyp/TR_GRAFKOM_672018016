@@ -389,8 +389,8 @@ void gedung_kiri(){
      //5
     glBegin(GL_QUADS);
     glColor3f(1,1,0.5);
-    glVertex3f(-400, 0, -50);
-    glVertex3f(-400,  50, -50);
+    glVertex3f(-400, 0, -60);
+    glVertex3f(-400,  50, -60);
     glVertex3f(-400, 50, -175);
     glVertex3f(-400, 0, -175);
     glEnd();
@@ -571,6 +571,28 @@ void gedung_kiri(){
      glVertex3f(350, 50, -800);
     glEnd();
 
+
+    glBegin(GL_POLYGON);
+    glColor3f(0,0,0);
+    glVertex3f(-400,  50, -175);
+     glVertex3f(-400, 50, -375);
+     glVertex3f(350, 50, -375);
+     glVertex3f(350, 50, -175);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0,0,0);
+    glVertex3f(-375,  50, -375);
+     glVertex3f(-375, 50, -400);
+     glVertex3f(-400, 50, -425);
+     glVertex3f(-400, 50, -525);
+
+      glVertex3f(-379,  50, -600);
+     glVertex3f(350, 50, -600);
+     glVertex3f(350, 50, -175);
+
+    glEnd();
+
     //atap
     glBegin(GL_POLYGON);
     glColor3f(0.5,0,0.5);
@@ -602,8 +624,6 @@ void gedung_kiri(){
      glVertex3f(-400, 50, -325);
      glVertex3f(-400, 50, -375);
     glEnd();
-
-
 
 }
 
