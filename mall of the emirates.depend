@@ -209,7 +209,14 @@
 
 1301111164 c:\program files (x86)\codeblocks\mingw\include\gl\gl.h
 
+1301111164 D
+
 976692172 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+976692172 3426eb81474eaf5b027b233475ab83925f8c63
 	<windows.h>
 	<GL/gl.h>
 	<GL/glu.h>
@@ -246,7 +253,11 @@
 	<GL/glu.h>
 	<stdlib.h>
 
-1595051906 source:d:\aku suka kuliah\semester 6\grafika\tr_grafkom_672018016\main.cpp
+1595062067 source:d:\aku suka kuliah\semester 6\grafika\tr_grafkom_672018016\main.cpp
+	<windows.h>
+	<GL/glut.h>
+
+1595052844 source:c:\users\donny\documents\kalkulator\tr_grafkom_672018016\main.cpp
 	<windows.h>
 	<GL/glut.h>
 
