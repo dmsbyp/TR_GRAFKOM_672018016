@@ -5104,6 +5104,17 @@ void kubahlingkaran(void)
     glEnd();
 
 }
+void alas ()
+{
+    glBegin(GL_QUADS);
+    glColor3f(0.4, 0.0, 0.0);
+    glVertex3f(700, 0,20);
+    glVertex3f(700, 0, -800);
+    glVertex3f(-700, 0.0, -800.0);
+    glVertex3f(-700, 0.0, 20.0);
+    glEnd();
+
+}
 void tampil(void)
 {
     if(is_depth)
@@ -5141,6 +5152,7 @@ line_2();
 line_3();
 line_4();
 line_5();
+alas();
 
 
     glPushMatrix();
