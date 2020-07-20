@@ -4569,3 +4569,4 @@ void ukuran(int lebar, int tinggi)
     glTranslatef(0.0, -5.0, -150.0);
     glMatrixMode(GL_MODELVIEW);
 }
+//ayo semangat
