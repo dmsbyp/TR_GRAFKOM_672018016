@@ -2505,6 +2505,131 @@ void kubah (void)
     glEnd();
 
 }
+void toko()
+{
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.0, 0.0);
+    glVertex3f(-200.0, 50.0, -80.0);
+    glVertex3f(-200.0, 0.0, -80.0);
+    glVertex3f(-400.0, 0.0, -80.0);
+    glVertex3f(-400.0, 50.0, -80.0);
+    glEnd();
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.0, 0.0);
+    glVertex3f(-200.0, 50.0, -175.0);
+    glVertex3f(-200.0, 0.0, -175.0);
+    glVertex3f(-400.0, 0.0, -175.0);
+    glVertex3f(-400.0, 50.0, -175.0);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(-200.0, 50.0, -175.0);
+    glVertex3f(-200.0, 35.0, -175.0);
+    glVertex3f(-200.0, 35.0, -80.0);
+    glVertex3f(-200.0, 50.0, -80.0);
+    glEnd();
+    //huruf
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(-199.0, 47.0, -90.0);
+    glVertex3f(-199.0, 47.0, -92.0);
+    glVertex3f(-199.0, 38.0, -92.0);
+    glVertex3f(-199.0, 38.0, -90.0);
+    glEnd();
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(-199.0, 47.0, -94.0);
+    glVertex3f(-199.0, 47.0, -96.0);
+    glVertex3f(-199.0, 38.0, -96.0);
+    glVertex3f(-199.0, 38.0, -94.0);
+    glEnd();
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(-199.0, 43.0, -95.0);
+    glVertex3f(-199.0, 47.0, -98.0);
+    glVertex3f(-199.0, 45.0, -98.0);
+    glVertex3f(-199.0, 41.0, -96.0);
+    glVertex3f(-199.0, 38.0, -98.0);
+    glVertex3f(-199.0, 36.0, -98.0);
+    glVertex3f(-199.0, 40.0, -96.0);
+    glEnd();
+
+
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(-199.0, 47.0, -100.0);
+    glVertex3f(-199.0, 47.0, -102.0);
+    glVertex3f(-199.0, 38.0, -102.0);
+    glVertex3f(-199.0, 38.0, -100.0);
+
+    glEnd();
+
+
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(-199.0, 47.0, -102.0);
+    glVertex3f(-199.0, 45.0, -102.0);
+    glVertex3f(-199.0, 45.0, -105.0);
+    glVertex3f(-199.0, 47.0, -105.0);
+
+    glEnd();
+
+
+     glBegin(GL_POLYGON);
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(-199.0, 43.0, -102.0);
+    glVertex3f(-199.0, 41.0, -102.0);
+    glVertex3f(-199.0, 41.0, -105.0);
+    glVertex3f(-199.0, 43.0, -105.0);
+
+    glEnd();
+
+     glBegin(GL_POLYGON);
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(-199.0, 40.0, -102.0);
+    glVertex3f(-199.0, 38.0, -102.0);
+    glVertex3f(-199.0, 38.0, -105.0);
+    glVertex3f(-199.0, 40.0, -105.0);
+
+    glEnd();
+
+
+     glBegin(GL_POLYGON);
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(-199.0, 47.0, -107.0);
+    glVertex3f(-199.0, 38.0, -107.0);
+    glVertex3f(-199.0, 38.0, -109.0);
+    glVertex3f(-199.0, 47.0, -109.0);
+
+    glEnd();
+
+
+     glBegin(GL_POLYGON);
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(-199.0, 47.0, -109.0);
+    glVertex3f(-199.0, 45.0, -109.0);
+    glVertex3f(-199.0, 45.0, -112.0);
+    glVertex3f(-199.0, 47.0, -112.0);
+
+    glEnd();
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(-199.0, 40.0, -109.0);
+    glVertex3f(-199.0, 42.0, -109.0);
+    glVertex3f(-199.0, 42.0, -112.0);
+    glVertex3f(-199.0, 40.0, -112.0);
+
+    glEnd();
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(-199.0, 47.0, -112.0);
+    glVertex3f(-199.0, 38.0, -112.0);
+    glVertex3f(-199.0, 38.0, -114.0);
+    glVertex3f(-199.0, 47.0, -114.0);
+
+    glEnd();
+}
 
 void hotel(void)
 {
@@ -5104,6 +5229,17 @@ void kubahlingkaran(void)
     glEnd();
 
 }
+void alas ()
+{
+    glBegin(GL_QUADS);
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex3f(700, 0,20);
+    glVertex3f(700, 0, -800);
+    glVertex3f(-700, 0.0, -800.0);
+    glVertex3f(-700, 0.0, 20.0);
+    glEnd();
+
+}
 void tampil(void)
 {
     if(is_depth)
@@ -5117,30 +5253,32 @@ atap();
 jendela();
 
 gedung_depan();
-datar();
-hotel();
-kubah();
-kubahlingkaran();
-gedunghotel1();
-gedunghotel2();
-gedunghotel3();
-gedunghotel4();
-gedunghotel5();
-gedungatas();
-genteng();
-kubahhotel1();
-kubahhotel2();
-kubahhotel3();
-gedungbelakang();
-gedung_samping_hotel();
-line_gedung_samping_hotel();
-line_gedung_depan();
-line_hotel();
-line_1();
-line_2();
-line_3();
-line_4();
-line_5();
+//datar();
+//hotel();
+//kubah();
+//kubahlingkaran();
+//gedunghotel1();
+//gedunghotel2();
+//gedunghotel3();
+//gedunghotel4();
+//gedunghotel5();
+//gedungatas();
+//genteng();
+//kubahhotel1();
+//kubahhotel2();
+//kubahhotel3();
+//gedungbelakang();
+//gedung_samping_hotel();
+//line_gedung_samping_hotel();
+//line_gedung_depan();
+//line_hotel();
+//line_1();
+//line_2();
+//line_3();
+//line_4();
+//line_5();
+alas();
+toko();
 
 
     glPushMatrix();
