@@ -228,9 +228,10 @@
 1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
 	<_mingw.h>
 
-1595306885 source:c:\users\tete\tr_grafkom_672018016\main.cpp
+1595325187 source:c:\users\tete\tr_grafkom_672018016\main.cpp
 	<windows.h>
 	<GL/glut.h>
+	<math.h>
 
 1594794732 source:c:\tr_grafkom_672018016\main.cpp
 	<GLUT/glut.h>
@@ -254,7 +255,8 @@
 	<windows.h>
 	<GL/glut.h>
 
-1595242744 source:c:\users\donny\documents\kalkulator\tr_grafkom_672018016\main.cpp
+1595324299 source:c:\users\donny\documents\kalkulator\tr_grafkom_672018016\main.cpp
 	<windows.h>
 	<GL/glut.h>
+	<math.h>
 
