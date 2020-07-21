@@ -1619,7 +1619,124 @@ void line_gedung_samping_hotel ()
     glEnd();
 
 }
+void metal ()
+{
+    //depan
+    glBegin(GL_POLYGON);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(-110.0, 40.0, -20.0);
+    glVertex3f(-110.0, 42.0, -20.0);
+    glVertex3f(-90.0, 42.0, -20.0);
+    glVertex3f(-90.0, 40.0, -20.0);
+    glEnd();
+    //sampingkanan
+    glBegin(GL_POLYGON);
+    glColor3f(0.9, 0.9, 0.5);
+    glVertex3f(-90.0, 0.0, -20.0);
+    glVertex3f(-90.0, 0.0, -35.0);
+    glVertex3f(-90.0, 45.0, -35.0);
+    glVertex3f(-90.0, 45.0, -20.0);
+    glEnd();
+    //samping kanan lagi
+    glBegin(GL_POLYGON);
+    glColor3f(0.9, 0.9, 0.5);
+    glVertex3f(-88.0, 0.0, -20.0);
+    glVertex3f(-88.0, 0.0, -35.0);
+    glVertex3f(-88.0, 45.0, -35.0);
+    glVertex3f(-88.0, 45.0, -20.0);
+    glEnd();
+    //depan kanan
+    glBegin(GL_POLYGON);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(-88.0, 0.0, -20.0);
+    glVertex3f(-88.0, 45.0, -20.0);
+    glVertex3f(-90.0, 45.0, -20.0);
+    glVertex3f(-90.0, 0.0, -20.0);
+    glEnd();
+    //depan kanan
+    glBegin(GL_POLYGON);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(-88.0, 0.0, -35.0);
+    glVertex3f(-88.0, 45.0, -35.0);
+    glVertex3f(-90.0, 45.0, -35.0);
+    glVertex3f(-90.0, 0.0, -35.0);
+    glEnd();
+    //kanan atas
+    glBegin(GL_POLYGON);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(-88.0, 45.0, -20.0);
+    glVertex3f(-88.0, 45.0, -35.0);
+    glVertex3f(-90.0, 45.0, -35.0);
+    glVertex3f(-90.0, 45.0, -20.0);
+    glEnd();
 
+     //belakang
+    glBegin(GL_POLYGON);
+    glColor3f(0.9, 0.9, 0.5);
+    glVertex3f(-110.0, 40.0, -25.0);
+    glVertex3f(-110.0, 42.0, -25.0);
+    glVertex3f(-90.0, 42.0, -25.0);
+    glVertex3f(-90.0, 40.0, -25.0);
+    glEnd();
+    //bawah
+    glBegin(GL_POLYGON);
+   glColor3f(0.9, 0.9, 0.5);
+    glVertex3f(-110.0, 40.0, -25.0);
+    glVertex3f(-110.0, 40.0, -20.0);
+    glVertex3f(-90.0, 40.0, -20.0);
+    glVertex3f(-90.0, 40.0, -25.0);
+    glEnd();
+     //atas
+    glBegin(GL_POLYGON);
+    glColor3f(0.9, 0.9, 0.5);
+    glVertex3f(-110.0, 42.0, -25.0);
+    glVertex3f(-110.0, 42.0, -20.0);
+    glVertex3f(-90.0, 42.0, -20.0);
+    glVertex3f(-90.0, 42.0, -25.0);
+    glEnd();
+
+     //sampingkiri
+    glBegin(GL_POLYGON);
+    glColor3f(0.9, 0.9, 0.5);
+    glVertex3f(-110.0, 0.0, -20.0);
+    glVertex3f(-110.0, 0.0, -35.0);
+    glVertex3f(-110.0, 45.0, -35.0);
+    glVertex3f(-110.0, 45.0, -20.0);
+    glEnd();
+    //samping kiri lagi
+    glBegin(GL_POLYGON);
+    glColor3f(0.9, 0.9, 0.5);
+    glVertex3f(-112.0, 0.0, -20.0);
+    glVertex3f(-112.0, 0.0, -35.0);
+    glVertex3f(-112.0, 45.0, -35.0);
+    glVertex3f(-112.0, 45.0, -20.0);
+    glEnd();
+    //depan kiri
+    glBegin(GL_POLYGON);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(-112.0, 0.0, -20.0);
+    glVertex3f(-112.0, 45.0, -20.0);
+    glVertex3f(-110.0, 45.0, -20.0);
+    glVertex3f(-110.0, 0.0, -20.0);
+    glEnd();
+    //depan kiri
+    glBegin(GL_POLYGON);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(-112.0, 0.0, -35.0);
+    glVertex3f(-112.0, 45.0, -35.0);
+    glVertex3f(-110.0, 45.0, -35.0);
+    glVertex3f(-110.0, 0.0, -35.0);
+    glEnd();
+    //kiri atas
+    glBegin(GL_POLYGON);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(-112.0, 45.0, -20.0);
+    glVertex3f(-112.0, 45.0, -35.0);
+    glVertex3f(-110.0, 45.0, -35.0);
+    glVertex3f(-110.0, 45.0, -20.0);
+    glEnd();
+
+}
 void gedung_depan ()
 {
     //1
@@ -6011,6 +6128,7 @@ line_5();
 line_6();
 alas();
 toko();
+metal();
 kompor();
 mejaatas();
 kakimeja1();
