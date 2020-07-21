@@ -1174,9 +1174,6 @@ glBegin(GL_QUADS);
      glVertex3f(370,  170, -59);
     glEnd();
 
-
-
-
      glBegin(GL_QUADS);
     glColor3f(1,1,1);
      glVertex3f(360,  110, -59);
@@ -1208,11 +1205,6 @@ glBegin(GL_QUADS);
      glVertex3f(370,  180, -59);
      glVertex3f(370,  170, -59);
     glEnd();
-
-
-
-
-
 
      glBegin(GL_QUADS);
     glColor3f(1,1,1);
@@ -1951,6 +1943,27 @@ void kubah (void)
     glVertex3f(-40.0, 0.0, -40.0);
     glVertex3f(-40.0, 80.0, -40.0);
     glEnd();
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.5, 0.4);
+    glVertex3f(20.0, 80.0, -60.0);
+    glVertex3f(20.0, 50.0, -60.0);
+    glVertex3f(0.0, 50.0, -80.0);
+    glVertex3f(0.0, 80.0, -80.0);
+    glEnd();
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.5, 0.4);
+    glVertex3f(0.0, 80.0, -80.0);
+    glVertex3f(0.0, 50.0, -80.0);
+    glVertex3f(-20.0, 50.0, -80.0);
+    glVertex3f(-20.0, 80.0, -80.0);
+    glEnd();
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.5, 0.4);
+    glVertex3f(-40.0, 80.0, -60.0);
+    glVertex3f(-40.0, 50.0, -60.0);
+    glVertex3f(-20.0, 50.0, -80.0);
+    glVertex3f(-20.0, 80.0, -80.0);
+    glEnd();
     //line kanan
     glBegin(GL_LINE_LOOP);
     glColor3f(0.0, 0.0, 0.0);
@@ -2101,6 +2114,43 @@ void kubah (void)
     glVertex3f(-80.0, 0.0, 0.0);
     glVertex3f(-80.0, 80.0, 0.0);
     glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.5, 0.4);
+    glVertex3f(-40.0, 80.0, -40.0);
+    glVertex3f(-40.0, 50.0, -40.0);
+    glVertex3f(-40.0, 50.0, -80.0);
+    glVertex3f(-40.0, 80.0, -80.0);
+    glEnd();
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.5, 0.4);
+    glVertex3f(-80.0, 80.0, -120.0);
+    glVertex3f(-80.0, 50.0, -120.0);
+    glVertex3f(-40.0, 50.0, -80.0);
+    glVertex3f(-40.0, 80.0, -80.0);
+    glEnd();
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.5, 0.4);
+    glVertex3f(-80.0, 80.0, -120.0);
+    glVertex3f(-80.0, 50.0, -120.0);
+    glVertex3f(-120.0, 50.0, -120.0);
+    glVertex3f(-120.0, 80.0, -120.0);
+    glEnd();
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.5, 0.4);
+    glVertex3f(-160.0, 80.0, -80.0);
+    glVertex3f(-160.0, 50.0, -80.0);
+    glVertex3f(-120.0, 50.0, -120.0);
+    glVertex3f(-120.0, 80.0, -120.0);
+    glEnd();
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.5, 0.4);
+    glVertex3f(-160.0, 80.0, -80.0);
+    glVertex3f(-160.0, 50.0, -80.0);
+    glVertex3f(-160.0, 50.0, -40.0);
+    glVertex3f(-160.0, 80.0, -40.0);
+    glEnd();
+
     //pintu tengah
     glBegin(GL_POLYGON);
     glColor3f(1.0, 0.5, 0.4);
@@ -2292,6 +2342,28 @@ void kubah (void)
     glEnd();
 
     //dinding kiri
+     glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.5, 0.4);
+    glVertex3f(-160.0, 80.0, -60.0);
+    glVertex3f(-160.0, 50.0, -60.0);
+    glVertex3f(-180.0, 50.0, -80.0);
+    glVertex3f(-180.0, 80.0, -80.0);
+    glEnd();
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.5, 0.4);
+    glVertex3f(-180.0, 80.0, -80.0);
+    glVertex3f(-180.0, 50.0, -80.0);
+    glVertex3f(-200.0, 50.0, -80.0);
+    glVertex3f(-200.0, 80.0, -80.0);
+    glEnd();
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.5, 0.4);
+    glVertex3f(-220.0, 80.0, -60.0);
+    glVertex3f(-220.0, 50.0, -60.0);
+    glVertex3f(-200.0, 50.0, -80.0);
+    glVertex3f(-200.0, 80.0, -80.0);
+    glEnd();
+
     glBegin(GL_POLYGON);
     glColor3f(1.0, 0.5, 0.4);
     glVertex3f(-160.0, 80.0, -40.0);
@@ -2373,6 +2445,15 @@ void kubah (void)
     glVertex3f(-400.0, 0.0, -60.0);
     glVertex3f(-400.0, 50.0, -60.0);
     glEnd();
+    //atap
+    glBegin(GL_POLYGON);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(20.0, 50.0, -60.0);
+    glVertex3f(20.0, 50.0, -200.0);
+    glVertex3f(-400.0, 50.0, -200.0);
+    glVertex3f(-400.0, 50.0, -60.0);
+    glEnd();
+
 
 
     //line dinding kiri
@@ -2529,6 +2610,7 @@ void toko()
     glVertex3f(-200.0, 35.0, -80.0);
     glVertex3f(-200.0, 50.0, -80.0);
     glEnd();
+
     //huruf
     glBegin(GL_POLYGON);
     glColor3f(1.0, 1.0, 1.0);
@@ -5352,30 +5434,30 @@ atap();
 jendela();
 
 gedung_depan();
-//datar();
-//hotel();
-//kubah();
-//kubahlingkaran();
-//gedunghotel1();
-//gedunghotel2();
-//gedunghotel3();
-//gedunghotel4();
-//gedunghotel5();
-//gedungatas();
-//genteng();
-//kubahhotel1();
-//kubahhotel2();
-//kubahhotel3();
-//gedungbelakang();
-//gedung_samping_hotel();
-//line_gedung_samping_hotel();
-//line_gedung_depan();
-//line_hotel();
-//line_1();
-//line_2();
-//line_3();
-//line_4();
-//line_5();
+datar();
+hotel();
+kubah();
+kubahlingkaran();
+gedunghotel1();
+gedunghotel2();
+gedunghotel3();
+gedunghotel4();
+gedunghotel5();
+gedungatas();
+genteng();
+kubahhotel1();
+kubahhotel2();
+kubahhotel3();
+gedungbelakang();
+gedung_samping_hotel();
+line_gedung_samping_hotel();
+line_gedung_depan();
+line_hotel();
+line_1();
+line_2();
+line_3();
+line_4();
+line_5();
 alas();
 toko();
 kompor();
