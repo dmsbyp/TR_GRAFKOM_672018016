@@ -5240,6 +5240,105 @@ void alas ()
     glEnd();
 
 }
+
+void kompor (void)
+{
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0.5);
+    glVertex3f(-290, 6, -23);
+    glVertex3f(-290, 6, -32);
+    glVertex3f(-290, 0, -32);
+    glVertex3f(-290, 0, -23);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0.5);
+    glVertex3f(-285, 6, -23);
+    glVertex3f(-285, 6, -32);
+    glVertex3f(-285, 0, -32);
+    glVertex3f(-285, 0, -23);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0.5);
+    glVertex3f(-285, 6, -32);
+    glVertex3f(-290, 6, -32);
+    glVertex3f(-290, 0, -32);
+    glVertex3f(-285, 0, -32);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0.5);
+    glVertex3f(-285, 6, -23);
+    glVertex3f(-290, 6, -23);
+    glVertex3f(-290, 0, -23);
+    glVertex3f(-285, 0, -23);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-285, 6, -23);
+    glVertex3f(-285, 6, -32);
+    glVertex3f(-290, 6, -32);
+    glVertex3f(-290, 6, -23);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0.5);
+    glVertex3f(-285, 0, -23);
+    glVertex3f(-285, 0, -32);
+    glVertex3f(-290, 0, -32);
+    glVertex3f(-290, 0, -23);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(-286, 6, -24);
+    glVertex3f(-286, 6, -27);
+    glVertex3f(-289, 6, -27);
+    glVertex3f(-289, 6, -24);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(0,0,0);
+    glVertex3f(-286, 6, -28);
+    glVertex3f(-286, 6, -31);
+    glVertex3f(-289, 6, -31);
+    glVertex3f(-289, 6, -28);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,0.5,0);
+    glVertex3f(-287, 6, -25);
+    glVertex3f(-287, 6, -26);
+    glVertex3f(-289, 6, -26);
+    glVertex3f(-289, 6, -25);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,0.5,0);
+    glVertex3f(-287, 6, -29);
+    glVertex3f(-287, 6, -30);
+    glVertex3f(-289, 6, -30);
+    glVertex3f(-289, 6, -29);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-285, 5, -29);
+    glVertex3f(-285, 5, -30);
+    glVertex3f(-285, 4, -30);
+    glVertex3f(-285, 4, -29);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(1,1,1);
+    glVertex3f(-285, 5, -25);
+    glVertex3f(-285, 5, -26);
+    glVertex3f(-285, 4, -26);
+    glVertex3f(-285, 4, -25);
+    glEnd();
+}
 void tampil(void)
 {
     if(is_depth)
@@ -5279,6 +5378,7 @@ gedung_depan();
 //line_5();
 alas();
 toko();
+kompor();
 
 
     glPushMatrix();
