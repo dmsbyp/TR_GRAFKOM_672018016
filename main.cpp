@@ -2586,6 +2586,124 @@ void kubah (void)
     glEnd();
 
 }
+void metal ()
+{
+    //depan
+    glBegin(GL_POLYGON);
+    glColor3f(0.0, 0.5, 0.0);
+    glVertex3f(-110.0, 40.0, -20.0);
+    glVertex3f(-110.0, 42.0, -20.0);
+    glVertex3f(-90.0, 42.0, -20.0);
+    glVertex3f(-90.0, 40.0, -20.0);
+    glEnd();
+    //sampingkanan
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.0, 0.0);
+    glVertex3f(-90.0, 0.0, -20.0);
+    glVertex3f(-90.0, 0.0, -35.0);
+    glVertex3f(-90.0, 45.0, -35.0);
+    glVertex3f(-90.0, 45.0, -20.0);
+    glEnd();
+    //samping kanan lagi
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.0, 0.0);
+    glVertex3f(-88.0, 0.0, -20.0);
+    glVertex3f(-88.0, 0.0, -35.0);
+    glVertex3f(-88.0, 45.0, -35.0);
+    glVertex3f(-88.0, 45.0, -20.0);
+    glEnd();
+    //depan kanan
+    glBegin(GL_POLYGON);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(-88.0, 0.0, -20.0);
+    glVertex3f(-88.0, 45.0, -20.0);
+    glVertex3f(-90.0, 45.0, -20.0);
+    glVertex3f(-90.0, 0.0, -20.0);
+    glEnd();
+    //depan kanan
+    glBegin(GL_POLYGON);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(-88.0, 0.0, -35.0);
+    glVertex3f(-88.0, 45.0, -35.0);
+    glVertex3f(-90.0, 45.0, -35.0);
+    glVertex3f(-90.0, 0.0, -35.0);
+    glEnd();
+    //kanan atas
+    glBegin(GL_POLYGON);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(-88.0, 45.0, -20.0);
+    glVertex3f(-88.0, 45.0, -35.0);
+    glVertex3f(-90.0, 45.0, -35.0);
+    glVertex3f(-90.0, 45.0, -20.0);
+    glEnd();
+
+     //belakang
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.0, 0.0);
+    glVertex3f(-110.0, 40.0, -25.0);
+    glVertex3f(-110.0, 42.0, -25.0);
+    glVertex3f(-90.0, 42.0, -25.0);
+    glVertex3f(-90.0, 40.0, -25.0);
+    glEnd();
+    //bawah
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.0, 0.0);
+    glVertex3f(-110.0, 40.0, -25.0);
+    glVertex3f(-110.0, 40.0, -20.0);
+    glVertex3f(-90.0, 40.0, -20.0);
+    glVertex3f(-90.0, 40.0, -25.0);
+    glEnd();
+     //atas
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.0, 0.0);
+    glVertex3f(-110.0, 42.0, -25.0);
+    glVertex3f(-110.0, 42.0, -20.0);
+    glVertex3f(-90.0, 42.0, -20.0);
+    glVertex3f(-90.0, 42.0, -25.0);
+    glEnd();
+
+     //sampingkiri
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.0, 0.0);
+    glVertex3f(-110.0, 0.0, -20.0);
+    glVertex3f(-110.0, 0.0, -35.0);
+    glVertex3f(-110.0, 45.0, -35.0);
+    glVertex3f(-110.0, 45.0, -20.0);
+    glEnd();
+    //samping kiri lagi
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.0, 0.0);
+    glVertex3f(-112.0, 0.0, -20.0);
+    glVertex3f(-112.0, 0.0, -35.0);
+    glVertex3f(-112.0, 45.0, -35.0);
+    glVertex3f(-112.0, 45.0, -20.0);
+    glEnd();
+    //depan kiri
+    glBegin(GL_POLYGON);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(-112.0, 0.0, -20.0);
+    glVertex3f(-112.0, 45.0, -20.0);
+    glVertex3f(-110.0, 45.0, -20.0);
+    glVertex3f(-110.0, 0.0, -20.0);
+    glEnd();
+    //depan kiri
+    glBegin(GL_POLYGON);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(-112.0, 0.0, -35.0);
+    glVertex3f(-112.0, 45.0, -35.0);
+    glVertex3f(-110.0, 45.0, -35.0);
+    glVertex3f(-110.0, 0.0, -35.0);
+    glEnd();
+    //kiri atas
+    glBegin(GL_POLYGON);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex3f(-112.0, 45.0, -20.0);
+    glVertex3f(-112.0, 45.0, -35.0);
+    glVertex3f(-110.0, 45.0, -35.0);
+    glVertex3f(-110.0, 45.0, -20.0);
+    glEnd();
+
+}
 void toko()
 {
     glBegin(GL_POLYGON);
@@ -5124,7 +5242,6 @@ void line_5()
     glEnd();
 }
 
-
 void kubahlingkaran(void)
 {
     //atas kubah depan
@@ -5313,6 +5430,9 @@ void kubahlingkaran(void)
 }
 void alas ()
 {
+
+
+
     glBegin(GL_QUADS);
     glColor3f(1.0, 1.0, 1.0);
     glVertex3f(700, 0,20);
@@ -5361,6 +5481,8 @@ line_4();
 line_5();
 alas();
 toko();
+metal();
+
 
 
     glPushMatrix();
