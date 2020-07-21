@@ -741,10 +741,10 @@ void jendela (){
  //16
     glBegin(GL_QUADS);
     glColor3f(0.5,0,1);
-     glVertex3f(-540,  10, -400);
-     glVertex3f(-540,  40, -400);
-      glVertex3f(-510,  40, -400);
-       glVertex3f(-510,  10, -400);
+     glVertex3f(-540,  10, -401);
+     glVertex3f(-540,  40, -401);
+      glVertex3f(-510,  40, -401);
+       glVertex3f(-510,  10, -401);
     glEnd();
 
 
@@ -2586,6 +2586,8 @@ void kubah (void)
     glEnd();
 
 }
+
+
 void toko()
 {
     glBegin(GL_POLYGON);
