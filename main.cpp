@@ -1439,6 +1439,77 @@ glBegin(GL_QUADS);
 
 }
 
+void tempat_tidur(){
+
+
+    glBegin(GL_QUADS);
+    glColor3f(0.3, 0.0, 0);
+    glVertex3f(-260.0, 0.0, -160.0);
+    glVertex3f(-260.0, 0.0, -145.0);
+    glVertex3f(-260.0, 8.0, -145.0);
+    glVertex3f(-260.0, 8.0, -160.0);
+    glEnd();
+
+
+    glBegin(GL_QUADS);
+    glColor3f(0.3, 0.0, 0);
+    glVertex3f(-260.0, 0.0, -145.0);
+    glVertex3f(-260.0, 8.0, -145.0);
+    glVertex3f(-320.0, 8.0, -145.0);
+    glVertex3f(-320.0, 0.0, -145.0);
+
+    glEnd();
+
+
+     glBegin(GL_QUADS);
+    glColor3f(0.3, 0.0, 0);
+    glVertex3f(-260.0, 0.0, -160);
+    glVertex3f(-260.0, 8.0, -160.0);
+    glVertex3f(-320.0, 8.0, -160.0);
+    glVertex3f(-320.0, 0.0, -160.0);
+
+    glEnd();
+
+
+
+ glBegin(GL_QUADS);
+    glColor3f(1.0, 0, 1);
+    glVertex3f(-320.0, 0.0, -160.0);
+    glVertex3f(-320.0, 0.0, -145.0);
+    glVertex3f(-320.0, 15.0, -145.0);
+    glVertex3f(-320.0, 15.0, -160.0);
+    glEnd();
+
+    glBegin(GL_LINES);
+    glColor3f(0, 0, 0);
+    glVertex3f(-320.0, 0.0, -160.0);
+    glVertex3f(-320.0, 0.0, -145.0);
+    glVertex3f(-320.0, 15.0, -145.0);
+    glVertex3f(-320.0, 15.0, -160.0);
+    glEnd();
+
+
+  glBegin(GL_QUADS);
+    glColor3f(1.0, 0.5, 1.0);
+    glVertex3f(-260.0, 0.0, -145);
+    glVertex3f(-260.0, 0.0, -160.0);
+    glVertex3f(-320.0, 0.0, -160.0);
+    glVertex3f(-320.0, 0.0, -145.0);
+
+    glEnd();
+
+
+
+    glBegin(GL_QUADS);
+    glColor3f(0, 0, 1.0);
+    glVertex3f(-260.0, 8.0, -145);
+    glVertex3f(-260.0, 8.0, -160.0);
+    glVertex3f(-320.0, 8.0, -160.0);
+    glVertex3f(-320.0, 8.0, -145.0);
+
+    glEnd();
+
+}
 
 
 void gedung_samping_hotel ()
@@ -6132,6 +6203,7 @@ alas();
 toko();
 metal();
 kompor();
+tempat_tidur();
 mejaatas();
 kakimeja1();
 kakimeja2();

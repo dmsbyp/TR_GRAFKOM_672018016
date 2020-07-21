@@ -254,7 +254,8 @@
 	<windows.h>
 	<GL/glut.h>
 
-1595307785 source:c:\users\donny\documents\kalkulator\tr_grafkom_672018016\main.cpp
+1595324299 source:c:\users\donny\documents\kalkulator\tr_grafkom_672018016\main.cpp
 	<windows.h>
 	<GL/glut.h>
+	<math.h>
 
