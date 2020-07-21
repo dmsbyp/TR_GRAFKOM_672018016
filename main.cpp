@@ -5314,7 +5314,7 @@ void kubahlingkaran(void)
 void alas ()
 {
     glBegin(GL_QUADS);
-    glColor3f(1.0, 1.0, 1.0);
+    glColor3f(0.5, 0.5, 0.5);
     glVertex3f(700, 0,20);
     glVertex3f(700, 0, -800);
     glVertex3f(-700, 0.0, -800.0);
@@ -5327,98 +5327,98 @@ void kompor (void)
 {
     glBegin(GL_QUADS);
     glColor3f(0,0,0.5);
-    glVertex3f(-290, 6, -23);
-    glVertex3f(-290, 6, -32);
-    glVertex3f(-290, 0, -32);
-    glVertex3f(-290, 0, -23);
+    glVertex3f(-290, 6, -123);
+    glVertex3f(-290, 6, -132);
+    glVertex3f(-290, 0, -132);
+    glVertex3f(-290, 0, -123);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3f(0,0,0.5);
-    glVertex3f(-285, 6, -23);
-    glVertex3f(-285, 6, -32);
-    glVertex3f(-285, 0, -32);
-    glVertex3f(-285, 0, -23);
+    glVertex3f(-285, 6, -123);
+    glVertex3f(-285, 6, -132);
+    glVertex3f(-285, 0, -132);
+    glVertex3f(-285, 0, -123);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3f(0,0,0.5);
-    glVertex3f(-285, 6, -32);
-    glVertex3f(-290, 6, -32);
-    glVertex3f(-290, 0, -32);
-    glVertex3f(-285, 0, -32);
+    glVertex3f(-285, 6, -132);
+    glVertex3f(-290, 6, -132);
+    glVertex3f(-290, 0, -132);
+    glVertex3f(-285, 0, -132);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3f(0,0,0.5);
-    glVertex3f(-285, 6, -23);
-    glVertex3f(-290, 6, -23);
-    glVertex3f(-290, 0, -23);
-    glVertex3f(-285, 0, -23);
+    glVertex3f(-285, 6, -123);
+    glVertex3f(-290, 6, -123);
+    glVertex3f(-290, 0, -123);
+    glVertex3f(-285, 0, -123);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3f(1,1,1);
-    glVertex3f(-285, 6, -23);
-    glVertex3f(-285, 6, -32);
-    glVertex3f(-290, 6, -32);
-    glVertex3f(-290, 6, -23);
+    glVertex3f(-285, 6, -123);
+    glVertex3f(-285, 6, -132);
+    glVertex3f(-290, 6, -132);
+    glVertex3f(-290, 6, -123);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3f(0,0,0.5);
-    glVertex3f(-285, 0, -23);
-    glVertex3f(-285, 0, -32);
-    glVertex3f(-290, 0, -32);
-    glVertex3f(-290, 0, -23);
+    glVertex3f(-285, 0, -123);
+    glVertex3f(-285, 0, -132);
+    glVertex3f(-290, 0, -132);
+    glVertex3f(-290, 0, -123);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3f(0,0,0);
-    glVertex3f(-286, 6, -24);
-    glVertex3f(-286, 6, -27);
-    glVertex3f(-289, 6, -27);
-    glVertex3f(-289, 6, -24);
+    glVertex3f(-286, 6, -124);
+    glVertex3f(-286, 6, -127);
+    glVertex3f(-289, 6, -127);
+    glVertex3f(-289, 6, -124);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3f(0,0,0);
-    glVertex3f(-286, 6, -28);
-    glVertex3f(-286, 6, -31);
-    glVertex3f(-289, 6, -31);
-    glVertex3f(-289, 6, -28);
+    glVertex3f(-286, 6, -128);
+    glVertex3f(-286, 6, -131);
+    glVertex3f(-289, 6, -131);
+    glVertex3f(-289, 6, -128);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3f(1,0.5,0);
-    glVertex3f(-287, 6, -25);
-    glVertex3f(-287, 6, -26);
-    glVertex3f(-289, 6, -26);
-    glVertex3f(-289, 6, -25);
+    glVertex3f(-287, 6, -125);
+    glVertex3f(-287, 6, -126);
+    glVertex3f(-289, 6, -126);
+    glVertex3f(-289, 6, -125);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3f(1,0.5,0);
-    glVertex3f(-287, 6, -29);
-    glVertex3f(-287, 6, -30);
-    glVertex3f(-289, 6, -30);
-    glVertex3f(-289, 6, -29);
+    glVertex3f(-287, 6, -129);
+    glVertex3f(-287, 6, -130);
+    glVertex3f(-289, 6, -130);
+    glVertex3f(-289, 6, -129);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3f(1,1,1);
-    glVertex3f(-285, 5, -29);
-    glVertex3f(-285, 5, -30);
-    glVertex3f(-285, 4, -30);
-    glVertex3f(-285, 4, -29);
+    glVertex3f(-285, 5, -129);
+    glVertex3f(-285, 5, -130);
+    glVertex3f(-285, 4, -130);
+    glVertex3f(-285, 4, -129);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3f(1,1,1);
-    glVertex3f(-285, 5, -25);
-    glVertex3f(-285, 5, -26);
-    glVertex3f(-285, 4, -26);
-    glVertex3f(-285, 4, -25);
+    glVertex3f(-285, 5, -125);
+    glVertex3f(-285, 5, -126);
+    glVertex3f(-285, 4, -126);
+    glVertex3f(-285, 4, -125);
     glEnd();
 }
 void tampil(void)
@@ -5566,7 +5566,7 @@ void ukuran(int lebar, int tinggi)
 
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluPerspective(-1000.0, lebar / tinggi, 80.0, 1000.0);
+    gluPerspective(500.0, lebar / tinggi, 50.0, -1000.0);
     glTranslatef(0.0, -5.0, -150.0);
     glMatrixMode(GL_MODELVIEW);
 }
