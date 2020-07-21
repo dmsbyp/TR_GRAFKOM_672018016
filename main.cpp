@@ -6095,6 +6095,226 @@ kakimeja4(void)
     glEnd();
 }
 
+void kakikursi4()
+{
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-373,25,-110);
+    glVertex3f(-375,25,-110);
+    glVertex3f(-375,0,-110);
+    glVertex3f(-373,0,-110);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-373,25,-112);
+    glVertex3f(-375,25,-112);
+    glVertex3f(-375,0,-112);
+    glVertex3f(-373,0,-112);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-373,25,-110);
+    glVertex3f(-373,25,-112);
+    glVertex3f(-373,0,-112);
+    glVertex3f(-373,0,-110);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-375,25,-110);
+    glVertex3f(-375,25,-112);
+    glVertex3f(-375,0,-112);
+    glVertex3f(-375,0,-110);
+    glEnd();
+}
+
+void kakikursi3()
+{
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-373,25,-120);
+    glVertex3f(-375,25,-120);
+    glVertex3f(-375,0,-120);
+    glVertex3f(-373,0,-120);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-373,25,-118);
+    glVertex3f(-375,25,-118);
+    glVertex3f(-375,0,-118);
+    glVertex3f(-373,0,-118);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-373,25,-120);
+    glVertex3f(-373,25,-118);
+    glVertex3f(-373,0,-118);
+    glVertex3f(-373,0,-120);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-375,25,-120);
+    glVertex3f(-375,25,-118);
+    glVertex3f(-375,0,-118);
+    glVertex3f(-375,0,-120);
+    glEnd();
+}
+
+void kakikursi2()
+{
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-353,13,-110);
+    glVertex3f(-350,13,-110);
+    glVertex3f(-350,0,-110);
+    glVertex3f(-353,0,-110);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-353,13,-112);
+    glVertex3f(-350,13,-112);
+    glVertex3f(-350,0,-112);
+    glVertex3f(-353,0,-112);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-353,13,-110);
+    glVertex3f(-353,13,-112);
+    glVertex3f(-353,0,-112);
+    glVertex3f(-353,0,-110);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-350,13,-110);
+    glVertex3f(-350,13,-112);
+    glVertex3f(-350,0,-112);
+    glVertex3f(-350,0,-110);
+    glEnd();
+}
+
+void kakikursi1()
+{
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-353,13,-120);
+    glVertex3f(-350,13,-120);
+    glVertex3f(-350,0,-120);
+    glVertex3f(-353,0,-120);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-353,13,-118);
+    glVertex3f(-350,13,-118);
+    glVertex3f(-350,0,-118);
+    glVertex3f(-353,0,-118);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-353,13,-120);
+    glVertex3f(-353,13,-118);
+    glVertex3f(-353,0,-118);
+    glVertex3f(-353,0,-120);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-350,13,-120);
+    glVertex3f(-350,13,-118);
+    glVertex3f(-350,0,-118);
+    glVertex3f(-350,0,-120);
+    glEnd();
+}
+
+void kursi (void)
+{
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-350,13,-110);
+    glVertex3f(-375,13,-110);
+    glVertex3f(-375,10,-110);
+    glVertex3f(-350,10,-110);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-350,13,-120);
+    glVertex3f(-375,13,-120);
+    glVertex3f(-375,10,-120);
+    glVertex3f(-350,10,-120);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-350,13,-120);
+    glVertex3f(-350,13,-110);
+    glVertex3f(-350,10,-110);
+    glVertex3f(-350,10,-120);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-375,13,-120);
+    glVertex3f(-375,13,-110);
+    glVertex3f(-375,10,-110);
+    glVertex3f(-375,10,-120);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-350,13,-110);
+    glVertex3f(-375,13,-110);
+    glVertex3f(-375,13,-120);
+    glVertex3f(-350,13,-120);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-350,10,-110);
+    glVertex3f(-375,10,-110);
+    glVertex3f(-375,10,-120);
+    glVertex3f(-350,10,-120);
+    glEnd();
+
+}
+
+void duduk (void)
+{
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-375,15,-110);
+    glVertex3f(-375,15,-120);
+    glVertex3f(-375,20,-120);
+    glVertex3f(-375,20,-110);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-373,15,-110);
+    glVertex3f(-373,15,-120);
+    glVertex3f(-373,20,-120);
+    glVertex3f(-373,20,-110);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.5,0,0);
+    glVertex3f(-375,20,-120);
+    glVertex3f(-373,20,-120);
+    glVertex3f(-373,20,-110);
+    glVertex3f(-375,20,-110);
+    glEnd();
+}
+
 float sudut = 100;
 int i,n,b;
 
@@ -6209,6 +6429,12 @@ kakimeja1();
 kakimeja2();
 kakimeja3();
 kakimeja4();
+kursi();
+ kakikursi4();
+    kakikursi3();
+    kakikursi2();
+    kakikursi1();
+    duduk();
 
 
     glPushMatrix();
